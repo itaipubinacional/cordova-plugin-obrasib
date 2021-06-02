@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    id="cordova-plugin-obrasib"
+    version="1.0.0">
+    
+    <name>ObrasIB</name>
+    <description>
+        Cordova ObrasIB Plugin
+    </description>
+    <author>Anderson Davi - adavi@itaipu.gov.br</author>
+    <keywords></keywords>
+    <license></license>
+    
+    <engines>
+        <!-- Requires > 3.3.* because of the custom Framework tag for iOS [CB-5238] -->
+        <engine name="cordova" version=">=3.5.0" />
+    </engines>
+
+    <platform name="ios">
+
+        <preference name="GOOGLE_REVERSED_CLIENT_ID" />
+        
+        <config-file target="*-Info.plist" parent="NSLocationAlwaysUsageDescription">
+            <string>Accedemos a tu ubicación para ofrecerte una mejor experiencia. Tu ubicación solo será utilizada para mostrarlo en los mapas.</string>
+        </config-file>
+        
+        <config-file target="*-Info.plist" parent="NSLocationWhenInUseUsageDescription">
+            <string>Accedemos a tu ubicación para ofrecerte una mejor experiencia. Tu ubicación solo será utilizada para mostrarlo en los mapas.</string>
+        </config-file>
+        
+        <config-file target="*-Info.plist" parent="CFBundleURLTypes">
+            <array>
+                <dict>
+                    <key>CFBundleTypeRole</key>
+                    <string>Editor</string>
+                    <key>CFBundleURLName</key>
+                    <string>REVERSED_CLIENT_ID</string>
+                    <key>CFBundleURLSchemes</key>
+                    <array>
+                        <string>$GOOGLE_REVERSED_CLIENT_ID</string>
+                    </array>
+                </dict>
+            </array>
+        </config-file>
+
+    </platform>
+    
+</plugin>

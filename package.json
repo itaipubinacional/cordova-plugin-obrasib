@@ -1,0 +1,22 @@
+{
+    "name": "cordova-plugin-obrasib",
+    "version": "1.0.0",
+    "description": "Cordova ObrasIB Plugin",
+    "author": "Anderson Davi <adavi@itaipu.gov.br>",
+    "cordova": {
+        "id": "cordova-plugin-obrasib",
+        "platforms": [
+            "ios"
+        ]
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/itaipubinacional/cordova-plugin-obrasib.git"
+    },
+    "keywords": [],
+    "engines": {
+        "name": "cordova",
+        "version": ">=3.5.0"
+    },
+    "license": ""
+}
